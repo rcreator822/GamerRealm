@@ -20,9 +20,13 @@
             </style>
           </head>
           <body>
-            <div id="controls">
-              <button onclick="document.getElementById('proxyFrame').contentWindow.history.back()">⬅ Back</button>
+            <div id="toolbar" style="padding:10px; background:#f0f0f0; text-align:center;">
+              <button onclick="history.back()">⬅ Back</button>
+              <button onclick="history.forward()">➡ Forward</button>
+              <button onclick="location.reload()">🔄 Reload</button>
+              <button onclick="location.href='/'">🏠 Home</button>
             </div>
+
             <iframe id="proxyFrame" src="/static/"></iframe>
           </body>
           </html>
